@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Mock Test Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>SSC MOCK TEST PORTAL</h1>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <h3>Candidate Login</h3>
+            <div class="input-group">
+                <label>Username (Registration Number)*</label>
+                <input type="text" id="regNo" placeholder="Registration Number">
+            </div>
+            <div class="input-group">
+                <label>Password (SSC Registration Password)*</label>
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" class="show-btn" onclick="togglePassword()">
+                    Show
+                </button>
+                <p>Forgot Password</p>
+            </div>
+            <div class="input-group">
+                <div class="captcha-box">
+                    <span id="captchaText">A7B9X</span>
+                    <button type="button" class="refresh-btn" onclick="generateCaptcha()">↻ Refresh</button>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Captcha*</label>
+                <input type="text" id="captchaInput" placeholder="Captcha">
+            </div>
+            <button class="login-btn" onclick="login()">
+                Login
+            </button>
+            <p id="error"></p>
+            <div class="heading01">
+                <h3>New User?</h3>
+                <p>Register Now</p>
+            </div>
+        </div>
+    </div>
+    <div class="quick-links">
+        <h2>Quick Links</h2>
+        <div class="links-container">
+            <a href="home.html"" class=" link-btn">🏠 Home</a>
+            <a href="#" class="link-btn">📝 Mock Tests</a>
+            <a href="#" class="link-btn">📊 Results</a>
+        </div>
+        <div class="links-container2">
+            <a href="https://ssc.gov.in/" class="link-btn">🏠 GO SSC</a>
+            <a href="about.html" class="link-btn">ℹ️ About Us</a>
+        </div>
+    </div>
+    <div class="quote-container">
+        <div class="quote-icon">❝</div>
+        <p class="quote-text">
+            Every Mock Test Brings You Closer to Your Dream Job.
+        </p>
+        <span class="quote-source">
+            SSC MOCK TEST PORTAL
+        </span>
+    </div>
+    <footer>
+        <div class="pageFooter">
+            <div class="option1">
+                <h3>SSC Mock Test Portal</h3>
+                <p>Free SSC PYQ's available here</p>
+                <p>Practice SSC exams with real exam-like mock tests<br> and detailed performance analysis.</p>
+            </div>
+            <div class="option2">
+                <ul>
+                    <li>Latest SSC Pattern Based Tests</li>
+                    <li>Instant Result Analysis</li>
+                    <li>Subject-wise Performance Report</li>
+                    <li>Free Practice Questions</li>
+                </ul>
+            </div>
+            <div class="option3">
+                <p>Note-This website is made for education <br>and specially for SSC exams prepration</p>
+                <p>This is not official website of SSC.</p>
+            </div>
+        </div>
+        <div class="copyright1">
+            <p>© 2026 SSC Mock Test Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
