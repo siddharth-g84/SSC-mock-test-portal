@@ -18,12 +18,12 @@ function login() {
 
     if (
         regNo === "10475478961" &&
-        password === "mayanK@123"
+        password === "sonuG@123"
     ) {
 
         localStorage.setItem(
             "candidateName",
-            "Mayank"
+            "Sonu"
         );
 
         localStorage.setItem(
